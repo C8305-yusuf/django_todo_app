@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>add işlemi crud işlemlerinden create işlemidir</h1>
+<hr>
+<br>
+
+<form action="" method = "POST">
+    {% csrf_token %}
+    {{form}}  
+    <input type="submit" value="Add">
+</form>
+        
+{% endblock content %}
